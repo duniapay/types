@@ -1,4 +1,4 @@
-# TypeScript NPM Package
+# Dunia API Utils Library
 Scaffold TypeScript npm packages using this template to bootstrap your next library.
 
 This project includes:
@@ -6,36 +6,6 @@ This project includes:
 - [Rollup](https://rollupjs.org/)
 - [Microsoft API Extractor](https://api-extractor.com/)
 - [TypeDoc](https://typedoc.org/)
-
-
-## Getting Started
-
-Begin via any of the following:
-
-- Press the "*Use this template*" button
-
-- Use [degit](https://github.com/Rich-Harris/degit) to execute: 
-
-    ```
-    degit github:jasonsturges/typescript-npm-package
-    ```
-    
-- Use [GitHub CLI](https://cli.github.com/) to execute: 
-
-    ```
-    gh repo create <name> --template="https://github.com/jasonsturges/typescript-npm-package"
-    ```
-    
-- Simply `git clone`, delete the existing .git folder, and then:
-
-    ```
-    git init
-    git add -A
-    git commit -m "Initial commit"
-    ````
-
-Remember to use `npm search <term>` to avoid naming conflicts in the NPM Registery for your new package name.
-
 
 ## Usage
 
@@ -164,15 +134,3 @@ Once ready to submit your package to the NPM Registry, execute the following tas
 - `npm run clean` &mdash; Assure a clean build
 - `npm run build` &mdash; Build the package
 - `npm run build:types` &mdash; Build API Extractor d.ts declaration
-
-Assure the proper npm login:
-
-```
-npm login
-```
-
-Submit your package to the registry:
-
-```
-npm publish --access public
-```
