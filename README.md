@@ -1,4 +1,4 @@
-# TypeScript NPM Package
+# Dunia API Types NPM Package
 
 Scaffold TypeScript npm packages using this template to bootstrap your next library.
 
