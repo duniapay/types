@@ -7,6 +7,10 @@ import {
 } from "typeorm";
 import { UserType } from "../../enums";
 
+/**
+ * @class User
+ * This class represents Payments Gateway users (Module | Merchant).
+ */
 @Entity({ name: "user" })
 class User {
   @PrimaryColumn()

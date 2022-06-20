@@ -5,21 +5,19 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from "typeorm";
-import { TransactionStatus, TransactionType } from "../../enums";
+import { AccountType, TransactionStatus, TransactionType } from "../../enums";
 
+/**
+ * @class Transaction
+ * This class represents transactions(cashin | cashout) executed by our platform.
+ */
 @Entity({ name: "transaction" })
 class Transaction {
   @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
-  @Column({ name: "user_address", type: "varchar", length: 255 })
-  userAddress?: string;
-
   @Column({ name: "transaction_id", type: "varchar", length: 255 })
   transactionId: string;
-
-  @Column({ name: "quote_id", type: "int", nullable: true })
-  quoteId?: number;
 
   @Column({ type: "varchar", length: 255 })
   reference: string;
@@ -27,32 +25,41 @@ class Transaction {
   @Column({ type: "varchar", length: 255 })
   country: string;
 
-  @Column({ type: "varchar", length: 255 })
+  @Column({ type: "varchar", length: 255, nullable: true })
   provider?: string;
 
   @Column({ name: "transaction_type", enum: TransactionType, type: "enum" })
   transactionType: TransactionType;
 
-  @Column({ name: "fiat_type", type: "varchar", length: 255 })
-  fiatType?: string;
-
-  @Column({ name: "crypto_type", type: "varchar", length: 255 })
-  cryptoType?: string;
-
-  @Column({ name: "fiat_amount", type: "decimal", precision: 9, scale: 2 })
-  fiatAmount?: number;
-
-  @Column({ name: "crypto_amount", type: "decimal", precision: 14, scale: 4 })
-  cryptoAmount?: number;
-
-  @Column({ type: "decimal", precision: 9, scale: 2 })
+  @Column({ type: "decimal", precision: 9, scale: 2, nullable: true })
   fees?: number;
 
-  @Column({ type: "varchar", length: 255 })
-  sender?: string;
+  @Column({ name: "account_type", enum: AccountType, type: "enum" })
+  accountType: AccountType;
 
-  @Column({ type: "varchar", length: 255 })
-  receiver?: string;
+  @Column({
+    name: "mobile_money_account",
+    type: "varchar",
+    length: 255,
+    nullable: true,
+  })
+  mobileMoneyAccount?: string;
+
+  @Column({
+    name: "bank_account",
+    type: "varchar",
+    length: 255,
+    nullable: true,
+  })
+  bankAccount?: string;
+
+  @Column({
+    name: "iban_account",
+    type: "varchar",
+    length: 255,
+    nullable: true,
+  })
+  ibanAccount?: string;
 
   @Column({ type: "varchar", length: 255, nullable: true })
   otp?: string;
@@ -64,8 +71,8 @@ class Transaction {
   })
   transactionStatus: TransactionStatus;
 
-  @Column({ name: "transaction_status_details", type: "text" })
-  transactionStatusDetails: string;
+  @Column({ name: "transaction_status_details", type: "text", nullable: true })
+  transactionStatusDetails?: string;
 
   @CreateDateColumn({ name: "created_at", type: "datetime" })
   createdAt: string;

@@ -5,15 +5,33 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from "typeorm";
-import { TransactionType } from "../../enums";
+import { ConversionType } from "../../enums";
 
-@Entity({ name: "quote" })
-class Quote {
+/**
+ * @class Conversion
+ * This class represents FiatConnect conversion (crypto to fiat/Fiat to crypto).
+ */
+@Entity({ name: "conversion" })
+class Conversion {
   @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
-  @Column({ name: "user_address", type: "varchar", length: 255 })
-  userAdress: string;
+  @Column({ name: "crypto_address", type: "varchar", length: 255 })
+  cryptoAdress: string;
+
+  @Column({ name: "quote_id", type: "int" })
+  quoteId: number;
+
+  @Column({
+    name: "reference_transaction",
+    type: "varchar",
+    length: 255,
+    nullable: true,
+  })
+  referenceTransaction?: string;
+
+  @Column({ name: "conversion_type", type: "enum", enum: ConversionType })
+  conversionType: ConversionType;
 
   @Column({ type: "varchar", length: 255 })
   country: string;
@@ -33,13 +51,6 @@ class Quote {
   @Column({ type: "decimal", precision: 9, scale: 2 })
   fees: number;
 
-  @Column({
-    name: "quote_for",
-    type: "enum",
-    enum: ["EXCHANGE_IN", "EXCHANGE_OUT"],
-  })
-  quoteFor: TransactionType;
-
   @CreateDateColumn({ name: "created_at", type: "datetime" })
   createdAt: string;
 
@@ -47,4 +58,4 @@ class Quote {
   updatedAt: string;
 }
 
-export default Quote;
+export default Conversion;

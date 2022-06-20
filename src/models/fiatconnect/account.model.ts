@@ -1,14 +1,18 @@
 import { AccountType } from "../../enums";
 
+/**
+ * @interface AccountModel
+ * This interface represents FiatConnect users account.
+ */
 interface AccountModel {
   id: number;
-  userAddress: string;
+  cryptoAddress: string;
   accountName: string;
   institutionName: string;
-  iban: string;
-  mobile: string;
+  iban?: string;
+  mobile?: string;
   country: string;
-  operator: string;
+  operator?: string;
   accountType: AccountType;
 }
 

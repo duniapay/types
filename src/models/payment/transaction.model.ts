@@ -1,24 +1,24 @@
-import { TransactionType } from "../../enums";
+import { AccountType, TransactionStatus, TransactionType } from "../../enums";
 
+/**
+ * @interface TransactionModel
+ * This interface represents transactions(cashin | cashout) executed by our platform.
+ */
 interface TransactionModel {
   id: number;
-  userAddress?: string;
   transactionId: string;
-  quoteId?: string;
   reference: string;
   country: string;
   provider?: string;
   transactionType: TransactionType;
-  fiatType?: string;
-  cryptoType?: string;
-  fiatAmount?: number;
-  cryptoAmount?: number;
   fees?: number;
-  sender?: string;
-  receiver?: string;
+  accountType: AccountType;
+  mobileMoneyAccount?: string;
+  bankAccount?: string;
+  ibanAccount?: string;
   otp?: string;
-  transactionStatus: string;
-  transactionStatusDetails: string;
+  transactionStatus: TransactionStatus;
+  transactionStatusDetails?: string;
 }
 
 export default TransactionModel;

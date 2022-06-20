@@ -1,5 +1,9 @@
 import { UserType } from "../../enums";
 
+/**
+ * @interface UserModel
+ * This interface represents Payments Gateway users (Module | Merchant).
+ */
 interface UserModel {
   id: number;
   fullName: string;

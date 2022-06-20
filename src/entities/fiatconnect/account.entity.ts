@@ -7,13 +7,17 @@ import {
 } from "typeorm";
 import { AccountType } from "../../enums";
 
+/**
+ * @class Account
+ * This class represents FiatConnect users account.
+ */
 @Entity({ name: "account" })
 class Account {
   @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
-  @Column({ name: "user_address", type: "varchar", length: 255 })
-  userAddress: string;
+  @Column({ name: "crypto_address", type: "varchar", length: 255 })
+  cryptoAddress: string;
 
   @Column({ name: "account_name", type: "varchar", length: 255 })
   accountName: string;

@@ -7,22 +7,19 @@ import {
 } from "typeorm";
 
 /**
- * @class Identity
- * This class represents FiatConnect kyc details.
+ * @class User
+ * This class represents FiatConnect users details.
  */
-@Entity({ name: "identity" })
-class Identity {
+@Entity({ name: "user" })
+class User {
   @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
   @Column({ name: "crypto_address", type: "varchar", length: 255 })
-  cryptoAddress: string;
+  userAddress: string;
 
-  @Column({ name: "passbase_id", type: "varchar", length: 255 })
-  passbaseId: string;
-
-  @Column({ type: "varchar", length: 255, nullable: true })
-  country?: string;
+  @Column({ name: "last_connection", type: "datetime", nullable: true })
+  lastConnection?: string;
 
   @CreateDateColumn({ name: "created_at", type: "datetime" })
   createdAt: string;
@@ -31,4 +28,4 @@ class Identity {
   updatedAt: string;
 }
 
-export default Identity;
+export default User;

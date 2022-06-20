@@ -1,13 +1,9 @@
+/**
+ * @enum TransactionType is an enumeraton of the different transaction types that exist on our platform
+ */
 enum TransactionType {
-  EXCHANGE_IN = "EXCHANGE_IN",
-  EXCHANGE_OUT = "EXCHANGE_OUT",
-  EXCHANGE_STATUS = "EXCHANGE_STATUS",
-  QUOTE = "QUOTE",
-  KYC_SUBMISSION = "KYC_SUBMISSION",
-  KYC_STATUS = "KYC_STATUS",
   CASH_IN = "CASH_IN",
   CASH_OUT = "CASH_OUT",
-  CASH_STATUS = "CASH_STATUS",
 }
 
 export default TransactionType;

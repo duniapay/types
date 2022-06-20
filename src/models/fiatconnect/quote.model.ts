@@ -1,9 +1,13 @@
 import { TransactionType } from "../../enums";
 
+/**
+ * @interface QuoteModel
+ * This interface represents quotation estimation.
+ */
 interface QuoteModel {
   id: number;
-  userAddress: string;
-  contry: string;
+  cryptoAddress?: string;
+  country: string;
   fiatType: string;
   cryptoType: string;
   fiatAmount: number;
