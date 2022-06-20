@@ -2,20 +2,17 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  OneToMany,
   PrimaryColumn,
   UpdateDateColumn,
 } from "typeorm";
 import { UserType } from "../../enums";
-import Account from "./account.entity";
-import Docs from "./documents.entity";
 
 /**
  * @class User
  * This class represents Payments Gateway users (Module | Merchant).
  */
-@Entity({ name: "user" })
-class User {
+@Entity({ name: "customer" })
+class Customer {
   @PrimaryColumn()
   id: number;
 
@@ -31,17 +28,17 @@ class User {
   @Column({ name: "is_verified", type: "boolean", default: false })
   isVerified: boolean;
 
-  @OneToMany(() => Account, (account) => account.user)
-  accounts: Account[];
+  @Column({ name: "test_key", type: "varchar", length: 255 })
+  testKey: string;
 
-  @OneToMany(() => Docs, (docs) => docs.user)
-  documents: Array<Docs>;
-
-  @UpdateDateColumn({ name: "updated_at", type: "datetime" })
-  updatedAt: string;
+  @Column({ name: "prod_key", type: "varchar", length: 255 })
+  prodKey: string;
 
   @CreateDateColumn({ name: "created_at", type: "datetime" })
   createdAt: string;
+
+  @UpdateDateColumn({ name: "updated_at", type: "datetime" })
+  updatedAt: string;
 }
 
-export default User;
+export default Customer;
