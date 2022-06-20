@@ -1,4 +1,5 @@
-import { UserType } from "../../enums";
+import { IdentityModel } from "../kyc";
+import AccountModel from "./accounts.models";
 
 /**
  * @interface UserModel
@@ -7,11 +8,14 @@ import { UserType } from "../../enums";
 interface UserModel {
   id: number;
   fullName: string;
-  userType: UserType;
   isActive: boolean;
-  isVerified: boolean;
-  testKey: string;
-  prodKey: string;
+  isVerified?: boolean;
+  city: string;
+  country: string;
+  address?: string;
+  phone: string;
+  accounts: Array<AccountModel>;
+  documents: Array<IdentityModel>;
 }
 
 export default UserModel;
