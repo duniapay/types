@@ -14,6 +14,8 @@ interface AccountModel {
   country: string;
   operator?: string;
   accountType: AccountType;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export default AccountModel;

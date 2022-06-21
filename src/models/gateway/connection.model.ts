@@ -10,6 +10,8 @@ interface ConnectionModel {
   isProd: boolean;
   actionType: ActionType;
   actionReference: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export default ConnectionModel;

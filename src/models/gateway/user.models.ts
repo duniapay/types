@@ -12,6 +12,8 @@ interface UserModel {
   isVerified: boolean;
   testKey: string;
   prodKey: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export default UserModel;

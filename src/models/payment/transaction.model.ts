@@ -19,6 +19,8 @@ interface TransactionModel {
   otp?: string;
   transactionStatus: TransactionStatus;
   transactionStatusDetails?: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export default TransactionModel;
