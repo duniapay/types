@@ -11,4 +11,21 @@ interface BankTransactionModel {
   accountId: string;
 }
 
-export default BankTransactionModel;
+/**
+ * @interface MomoRecipient
+ * This interface represents recipient (cashin | cashout) executed by our platform.
+ */
+interface BankRecipientModel {
+  id: number;
+  country: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+  institution_name: string;
+  bank_account: string;
+  branch_name?: string;
+  address: string;
+  city: string;
+}
+
+export { BankTransactionModel, BankRecipientModel };

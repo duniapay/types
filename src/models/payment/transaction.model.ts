@@ -1,6 +1,7 @@
 import { AccountType, TransactionStatus, TransactionType } from "../../enums";
-import BankTransactionModel from "./bank.model";
-import MomoTransactionModel from "./momo.model";
+import { BankRecipientModel, BankTransactionModel } from "./bank.model";
+import { MomoRecipient, MomoTransactionModel } from "./momo.model";
+import { WalletRecipientModel } from "./wallet.model";
 
 /**
  * @interface TransactionModel
@@ -11,7 +12,7 @@ interface TransactionModel {
   reference: string;
   amount: number;
   currency: string;
-  customerId: string;
+  recipient: MomoRecipient | BankRecipientModel | WalletRecipientModel;
   transactionType: TransactionType;
   metadata: BankTransactionModel | MomoTransactionModel;
   transactionStatus: TransactionStatus;
