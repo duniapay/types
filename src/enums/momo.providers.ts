@@ -7,4 +7,12 @@ enum MomoProviders {
   MTN = "MTN",
 }
 
-export default MomoProviders;
+/**
+ * @enum MomoTxType is an enumeraton of the different account types that exist on our platform
+ */
+enum MomoTxType {
+  COLLECT = "COLLECT",
+  TRANSFER = "TRANSFER",
+}
+
+export { MomoProviders, MomoTxType };
