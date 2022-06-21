@@ -1,4 +1,6 @@
 import { AccountType, TransactionStatus, TransactionType } from "../../enums";
+import BankTransactionModel from "./bank.model";
+import MomoTransactionModel from "./momo.model";
 
 /**
  * @interface TransactionModel
@@ -6,21 +8,16 @@ import { AccountType, TransactionStatus, TransactionType } from "../../enums";
  */
 interface TransactionModel {
   id: number;
-  transactionId: string;
   reference: string;
-  country: string;
-  provider?: string;
+  amount: number;
+  currency: string;
+  customerId: string;
   transactionType: TransactionType;
-  fees?: number;
-  accountType: AccountType;
-  mobileMoneyAccount?: string;
-  bankAccount?: string;
-  ibanAccount?: string;
-  otp?: string;
+  metadata: BankTransactionModel | MomoTransactionModel;
   transactionStatus: TransactionStatus;
   transactionStatusDetails?: string;
-  createdAt: string;
-  updatedAt: string;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export default TransactionModel;

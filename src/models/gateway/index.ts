@@ -1,4 +1,6 @@
 import ConnectionModel from "./connection.model";
-import UserModel from "./user.models";
+import MerchantModel from "./merchant.models";
+import AccountModel from "./account.models";
+import DocumentModel from "./document.model";
 
-export { ConnectionModel, UserModel };
+export { ConnectionModel, MerchantModel, AccountModel, DocumentModel };
