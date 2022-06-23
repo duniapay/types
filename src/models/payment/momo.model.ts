@@ -1,4 +1,5 @@
 import { AccountType, TransactionStatus, TransactionType } from "../../enums";
+import { MomoTxType } from "../../enums/momo.providers";
 
 /**
  * @interface MomoTransactionModel
@@ -9,9 +10,23 @@ interface MomoTransactionModel {
   country: string;
   provider: string;
   type: AccountType.MOBILE_MONEY;
+  subtype: MomoTxType;
   phone: string;
   accountId: string;
   otp?: string;
 }
 
-export default MomoTransactionModel;
+/**
+ * @interface MomoRecipient
+ * This interface represents recipient (cashin | cashout) executed by our platform.
+ */
+interface MomoRecipient {
+  id: number;
+  country: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+  provider: string;
+}
+
+export { MomoTransactionModel, MomoRecipient };

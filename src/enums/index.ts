@@ -4,7 +4,7 @@ import UserType from "./usertype.enum";
 import TransactionStatus from "./transactionstatus.enum";
 import ConversionType from "./conversiontype.enum";
 import ActionType from "./actiontype.enum";
-import MomoProviders from "./momo.providers";
+import { MomoProviders } from "./momo.providers";
 
 export {
   AccountType,

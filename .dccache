@@ -1,1 +1,237 @@
-{"/Users/serge/Desktop/types/jest.config.js":[350,1655751626746.7463,"3b1b5916412809c89c3c6342c36962cb0b4940df1511ead4ccd3c095bef43ae8"],"/Users/serge/Desktop/types/ormconfig.js":[443,1655751626747.396,"f10937e0d8c13c30c96b0976e0ca9c1c04438f004dd05c9e7a9d0ac7addd4631"],"/Users/serge/Desktop/types/rollup.config.js":[807,1654358268576.317,"db5197ebe110f9d5f2d15bfdb7aad6623c1e25de742e7603cb700d6d10f3c9cd"],"/Users/serge/Desktop/types/__tests__/user.test.ts":[319,1655751626746.1375,"66f9beb4d42e48045c2ba43d133377af856307627f92a184abdd36ed76a8b786"],"/Users/serge/Desktop/types/src/connection.ts":[516,1655751626752.8438,"d40b5a213c2dd37b6a1c2f290953c163619b0d095ff62b816cd062b56638a935"],"/Users/serge/Desktop/types/src/index.ts":[0,1654358268576.559,"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"],"/Users/serge/Desktop/types/src/entities/index.ts":[200,1655751626768.413,"80383cc700c4c38de61882f3de1f4e03f6b179a205119500dd9edd89ae685c98"],"/Users/serge/Desktop/types/src/enums/accounttype.enum.ts":[253,1655751626769.7886,"e38ad85aefb8af5dde83f3d73df4f545112f092cfa64f464df881be831374f7c"],"/Users/serge/Desktop/types/src/enums/actiontype.enum.ts":[295,1655751626769.9417,"a6b8c9b0dbf8ecd53d0e240997864a11d9c08121f9fa9f2cb8ab101baed6f6f2"],"/Users/serge/Desktop/types/src/enums/conversiontype.enum.ts":[194,1655751626770.0876,"49a89e9b945bae1f5be7fdaf42b1346fd0008624447f3f699e55319c24cbd0db"],"/Users/serge/Desktop/types/src/enums/index.ts":[468,1655752231195.3494,"af90a6e5809580a9390f991afa7b2eb72f933b2b3c10cf49aa030689d58191d0"],"/Users/serge/Desktop/types/src/enums/momo.providers.ts":[237,1655752208357.828,"4c522c165aa0a827ae407c79ddd158e3fbcebb1c91ef8a9f1ad9ac1b0e4a6c26"],"/Users/serge/Desktop/types/src/enums/transactionstatus.enum.ts":[238,1655751626770.3584,"8f0d6ca6add95d2f5bba6eb97f9b8ec0c1ce30606247f96c4a5be62253fa7303"],"/Users/serge/Desktop/types/src/enums/transactiontype.enum.ts":[218,1655751626770.491,"b816fb2ee10d2dcf79347e94c211ee7c6b225074cd7deaaec2c38397f472bcc7"],"/Users/serge/Desktop/types/src/enums/usertype.enum.ts":[203,1655751626770.6284,"c5c2a21b778b6e7df43d676afd1c568b5590ca8b7403463b2cf57b4423139bc2"],"/Users/serge/Desktop/types/src/models/index.ts":[240,1655751626774.6646,"011d683b3dc4ba8e2620de6835cdbc568452f5c244e41ff2618546031b40a938"],"/Users/serge/Desktop/types/src/entities/gateway/account.entity.ts":[650,1655753960531.5027,"83441145ed010dea818660502fac7a3a15792d858295f087ec2ad34444265390"],"/Users/serge/Desktop/types/src/entities/gateway/connection.entity.ts":[904,1655751626758.562,"4307d806a6a8835a325330f017e9137496a816b7c8ffb90251bc15865e9c153d"],"/Users/serge/Desktop/types/src/entities/gateway/customer.entity.ts":[1115,1655752904488.8164,"3d6d820c33b9377dcdeb143df37cc037766391eac6ab8f7f715574a3cb74c67b"],"/Users/serge/Desktop/types/src/entities/gateway/documents.entity.ts":[658,1655754670700.4343,"c5b54d53e0bd23d9bccffc9bd3f5688d43aef29699efdae545a5c2c7707351c9"],"/Users/serge/Desktop/types/src/entities/gateway/index.ts":[254,1655753249000.0222,"9b21c4178af6d8f2c1adb965c61e9de37e5c525072479f52472ae8a891da40f3"],"/Users/serge/Desktop/types/src/entities/gateway/user.entity.ts":[1089,1655753945585.7903,"ec64b44763d2e6602d8a85709f884a51db92cfc9ace6c79404a26339927d8e96"],"/Users/serge/Desktop/types/src/entities/fiatconnect/account.entity.ts":[1215,1655751626753.1616,"88748ff79852c2c156f3bf1fb6ce688e2537e2219b9c17542efa4dc52a06c4f9"],"/Users/serge/Desktop/types/src/entities/fiatconnect/conversion.entity.ts":[1499,1655751626753.3484,"c337db80e48a1b91187ab1e283ff3f3ce5929048413a686bec7ce7bb04fc2cef"],"/Users/serge/Desktop/types/src/entities/fiatconnect/index.ts":[202,1655751626753.537,"e646c589761e133670dfc56ad51ff85d83ebafb34db5891ae9b9ee6ec203cea2"],"/Users/serge/Desktop/types/src/entities/fiatconnect/quote.entity.ts":[1240,1655751626753.725,"2ef524848def7789a5bbfa98d5c9c60111bbd12147ba695f827aaf1ce029b269"],"/Users/serge/Desktop/types/src/entities/fiatconnect/user.entity.ts":[670,1655751626753.9253,"8384da010099686faaa7b9fabe2023db3ceb8733e79a7da8b4abdb4b09ecee08"],"/Users/serge/Desktop/types/src/entities/kyc/identity.entity.ts":[754,1655751626768.681,"63fc96a350bc717783c841f69ca97d56fb856e4ddeebf4a81b9c79454fb08545"],"/Users/serge/Desktop/types/src/entities/kyc/index.ts":[64,1655751626768.8445,"2441ab11618d962a50c350203b88edb2821d5012e8ea2b7aebede8494cf13e91"],"/Users/serge/Desktop/types/src/entities/payment/index.ts":[73,1655751626769.2502,"fd20a280a24ca11368d752c6a84161f2aa03c7faa322c613c6894a48c00db1f0"],"/Users/serge/Desktop/types/src/entities/payment/transaction.entity.ts":[1946,1655751626769.386,"ce66c7caa54a14638328d12f59df3e1772b375071a7f7f7f9c102d790a7584f5"],"/Users/serge/Desktop/types/src/models/fiatconnect/account.model.ts":[385,1655751626770.8528,"d5f28ec61501facfb452fb4492f24dd6e95f21c2ae441952c505bc41bb8464f5"],"/Users/serge/Desktop/types/src/models/fiatconnect/conversion.model.ts":[522,1655751626771.0403,"5be237bdded1f9b011b91b0090b74270b17ebfd5b600d41e74d03c19c4b5250b"],"/Users/serge/Desktop/types/src/models/fiatconnect/index.ts":[238,1655751626771.1982,"3b76e2b1675ee06e735ad74f78ff14db3dff498dc33c6d094f443823321b555a"],"/Users/serge/Desktop/types/src/models/fiatconnect/quote.model.ts":[377,1655751626771.4172,"e79a1c7514451cae1b19c85463541824c8f45e4e9fc241fa4c304c10b431185a"],"/Users/serge/Desktop/types/src/models/fiatconnect/user.model.ts":[205,1655751626772.0017,"54d7c9228882dc379298493c7ba90ca89136ad83f2a5801b2e7a285056677c8b"],"/Users/serge/Desktop/types/src/models/kyc/identity.model.ts":[230,1655751626775.058,"b62492fef990445fee097492f66ddca44ad899d1722045ff5c016e9525ae608a"],"/Users/serge/Desktop/types/src/models/kyc/index.ts":[73,1655751626775.1963,"0218e7ebeddbaec4eff49d419c053a06da12db9d5e64f8ad2ad408f533451dbd"],"/Users/serge/Desktop/types/src/models/gateway/accounts.models.ts":[387,1655753399393.4397,"987e9d3c46ab7e1562221fed94face3c71d37d4f46566c1f962810e6bf5d1f3f"],"/Users/serge/Desktop/types/src/models/gateway/connection.model.ts":[324,1655751626773.6511,"ac6894d482a7d718054eae72f4e6b72dcaf6e633703d907195f20de0f8639827"],"/Users/serge/Desktop/types/src/models/gateway/customer.model.ts":[350,1655752369261.8162,"163e4f45b24faf34613851ce84df1fa6f3fcb525ded5c82fc23b2c3f1a222b5b"],"/Users/serge/Desktop/types/src/models/gateway/index.ts":[129,1655751626773.7993,"418c883324546e1bcfc6518aeab3d9cf6616df3de75592bae63f38b5011e6bab"],"/Users/serge/Desktop/types/src/models/gateway/user.models.ts":[462,1655753412958.4106,"87ed12c8e1c8ce18cbbefad0c386116e6f44584eb7fe17d3077a4534a2c67fe0"],"/Users/serge/Desktop/types/src/models/payment/bank.model.ts":[357,1655754973197.1577,"5ca4463107e93fc26b358c70732ab49ad440d1b156bedb13e59f6ac98241c498"],"/Users/serge/Desktop/types/src/models/payment/index.ts":[82,1655751626775.3909,"7e4b60ab308ff332d1f987469b5f37374b9245850a7f0b445eee1c81ec372699"],"/Users/serge/Desktop/types/src/models/payment/momo.model.ts":[410,1655754932040.459,"b40a2f4423aa55580669bc04b6c1e5136b499c351ee8a4dce243efdfcb2882f5"],"/Users/serge/Desktop/types/src/models/payment/transaction.model.ts":[675,1655755101544.2712,"ecf4fc23fcf0df7d64d51a9b3eb64adac8bbf814950667559dc097f45014d656"]}
+{
+  "/Users/serge/Desktop/types/jest.config.js": [
+    350,
+    1655751626746.7463,
+    "3b1b5916412809c89c3c6342c36962cb0b4940df1511ead4ccd3c095bef43ae8"
+  ],
+  "/Users/serge/Desktop/types/ormconfig.js": [
+    443,
+    1655751626747.396,
+    "f10937e0d8c13c30c96b0976e0ca9c1c04438f004dd05c9e7a9d0ac7addd4631"
+  ],
+  "/Users/serge/Desktop/types/rollup.config.js": [
+    807,
+    1654358268576.317,
+    "db5197ebe110f9d5f2d15bfdb7aad6623c1e25de742e7603cb700d6d10f3c9cd"
+  ],
+  "/Users/serge/Desktop/types/__tests__/user.test.ts": [
+    319,
+    1655751626746.1375,
+    "66f9beb4d42e48045c2ba43d133377af856307627f92a184abdd36ed76a8b786"
+  ],
+  "/Users/serge/Desktop/types/src/connection.ts": [
+    516,
+    1655751626752.8438,
+    "d40b5a213c2dd37b6a1c2f290953c163619b0d095ff62b816cd062b56638a935"
+  ],
+  "/Users/serge/Desktop/types/src/index.ts": [
+    0,
+    1654358268576.559,
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  ],
+  "/Users/serge/Desktop/types/src/enums/accounttype.enum.ts": [
+    253,
+    1655751626769.7886,
+    "e38ad85aefb8af5dde83f3d73df4f545112f092cfa64f464df881be831374f7c"
+  ],
+  "/Users/serge/Desktop/types/src/enums/actiontype.enum.ts": [
+    295,
+    1655751626769.9417,
+    "a6b8c9b0dbf8ecd53d0e240997864a11d9c08121f9fa9f2cb8ab101baed6f6f2"
+  ],
+  "/Users/serge/Desktop/types/src/enums/conversiontype.enum.ts": [
+    194,
+    1655751626770.0876,
+    "49a89e9b945bae1f5be7fdaf42b1346fd0008624447f3f699e55319c24cbd0db"
+  ],
+  "/Users/serge/Desktop/types/src/enums/index.ts": [
+    423,
+    1655828249536.7688,
+    "d2ee12d9b8f2766979b0f00c8665037aafd65522844872cc27c3567439d072c5"
+  ],
+  "/Users/serge/Desktop/types/src/enums/momo.providers.ts": [
+    395,
+    1655828220378.1458,
+    "0aa546cedc39c1daee5edb5a4bbf86d0ed32d47a2149b85cd8c12f8610ac3f68"
+  ],
+  "/Users/serge/Desktop/types/src/enums/transactionstatus.enum.ts": [
+    238,
+    1655751626770.3584,
+    "8f0d6ca6add95d2f5bba6eb97f9b8ec0c1ce30606247f96c4a5be62253fa7303"
+  ],
+  "/Users/serge/Desktop/types/src/enums/transactiontype.enum.ts": [
+    218,
+    1655751626770.491,
+    "b816fb2ee10d2dcf79347e94c211ee7c6b225074cd7deaaec2c38397f472bcc7"
+  ],
+  "/Users/serge/Desktop/types/src/enums/usertype.enum.ts": [
+    203,
+    1655751626770.6284,
+    "c5c2a21b778b6e7df43d676afd1c568b5590ca8b7403463b2cf57b4423139bc2"
+  ],
+  "/Users/serge/Desktop/types/src/models/index.ts": [
+    240,
+    1655751626774.6646,
+    "011d683b3dc4ba8e2620de6835cdbc568452f5c244e41ff2618546031b40a938"
+  ],
+  "/Users/serge/Desktop/types/src/entities/index.ts": [
+    200,
+    1655751626768.413,
+    "80383cc700c4c38de61882f3de1f4e03f6b179a205119500dd9edd89ae685c98"
+  ],
+  "/Users/serge/Desktop/types/src/models/gateway/account.models.ts": [
+    519,
+    1655827427641.7178,
+    "b157fd890a5cf92ec9cfc17ca9093d0c0870c6a81ddf24bbc1b038f00564dad7"
+  ],
+  "/Users/serge/Desktop/types/src/models/gateway/connection.model.ts": [
+    367,
+    1655827427642.0452,
+    "5bc3967df3817810926d9ccf8484e03880eab459367a2b032e7acb4e8154344f"
+  ],
+  "/Users/serge/Desktop/types/src/models/gateway/document.model.ts": [
+    358,
+    1655827427642.3008,
+    "f893a63390d5690960711095421330cc27300551c72e181d10ac69513d1fc025"
+  ],
+  "/Users/serge/Desktop/types/src/models/gateway/index.ts": [
+    261,
+    1655827427642.6257,
+    "926ff6a2820d2b4e2a23ba12694600efac2ec5745173438b59ebd38d998297c3"
+  ],
+  "/Users/serge/Desktop/types/src/models/gateway/merchant.models.ts": [
+    583,
+    1655827427642.9226,
+    "2bcc86a80905aecb9363c0901cbb6d5dbd5f41c1d0e07db69168a2e065717575"
+  ],
+  "/Users/serge/Desktop/types/src/models/fiatconnect/account.model.ts": [
+    427,
+    1655827427640.8103,
+    "0383d9e1d46c13eb6b0263b1d9a18f385075f84f60d8a6424bad2f540479fa2f"
+  ],
+  "/Users/serge/Desktop/types/src/models/fiatconnect/conversion.model.ts": [
+    522,
+    1655751626771.0403,
+    "5be237bdded1f9b011b91b0090b74270b17ebfd5b600d41e74d03c19c4b5250b"
+  ],
+  "/Users/serge/Desktop/types/src/models/fiatconnect/index.ts": [
+    238,
+    1655751626771.1982,
+    "3b76e2b1675ee06e735ad74f78ff14db3dff498dc33c6d094f443823321b555a"
+  ],
+  "/Users/serge/Desktop/types/src/models/fiatconnect/quote.model.ts": [
+    419,
+    1655827427641.1294,
+    "eb49f089a45027a4ab4a802bf865349345fad7448960193f0ff096536c6b896b"
+  ],
+  "/Users/serge/Desktop/types/src/models/fiatconnect/user.model.ts": [
+    247,
+    1655827427641.4539,
+    "8b2fb623c280a5532e241d84882510700c66bb5f9b744d21154addfa56e181c7"
+  ],
+  "/Users/serge/Desktop/types/src/models/kyc/identity.model.ts": [
+    270,
+    1655827427643.2903,
+    "fc44f7e8e491f32945433c45224227319b43105bb9750cc694e779168fb69e4b"
+  ],
+  "/Users/serge/Desktop/types/src/models/kyc/index.ts": [
+    73,
+    1655751626775.1963,
+    "0218e7ebeddbaec4eff49d419c053a06da12db9d5e64f8ad2ad408f533451dbd"
+  ],
+  "/Users/serge/Desktop/types/src/models/payment/bank.model.ts": [
+    709,
+    1655827818753.4783,
+    "c5844a01ed6adcc056be688c21511fe8753de4b1c2f7350d21a6c614206e9ca1"
+  ],
+  "/Users/serge/Desktop/types/src/models/payment/index.ts": [
+    82,
+    1655751626775.3909,
+    "7e4b60ab308ff332d1f987469b5f37374b9245850a7f0b445eee1c81ec372699"
+  ],
+  "/Users/serge/Desktop/types/src/models/payment/momo.model.ts": [
+    778,
+    1655828309710.1506,
+    "cd924da330e508c9de2f786f29671810b65688049b53f22cc72813fbd0a8692d"
+  ],
+  "/Users/serge/Desktop/types/src/models/payment/transaction.model.ts": [
+    821,
+    1655827989573.4067,
+    "8004807b91c25d2534db74a14355a70baa8caaa739251a833db3c6d41900d52d"
+  ],
+  "/Users/serge/Desktop/types/src/models/payment/wallet.model.ts": [
+    350,
+    1655827898903.3867,
+    "10c5397d0fcd8375bbc1e9954e391b835f123889e5781250bad956c0a585814b"
+  ],
+  "/Users/serge/Desktop/types/src/entities/fiatconnect/account.entity.ts": [
+    1215,
+    1655751626753.1616,
+    "88748ff79852c2c156f3bf1fb6ce688e2537e2219b9c17542efa4dc52a06c4f9"
+  ],
+  "/Users/serge/Desktop/types/src/entities/fiatconnect/conversion.entity.ts": [
+    1499,
+    1655751626753.3484,
+    "c337db80e48a1b91187ab1e283ff3f3ce5929048413a686bec7ce7bb04fc2cef"
+  ],
+  "/Users/serge/Desktop/types/src/entities/fiatconnect/index.ts": [
+    202,
+    1655751626753.537,
+    "e646c589761e133670dfc56ad51ff85d83ebafb34db5891ae9b9ee6ec203cea2"
+  ],
+  "/Users/serge/Desktop/types/src/entities/fiatconnect/quote.entity.ts": [
+    1240,
+    1655751626753.725,
+    "2ef524848def7789a5bbfa98d5c9c60111bbd12147ba695f827aaf1ce029b269"
+  ],
+  "/Users/serge/Desktop/types/src/entities/fiatconnect/user.entity.ts": [
+    670,
+    1655751626753.9253,
+    "8384da010099686faaa7b9fabe2023db3ceb8733e79a7da8b4abdb4b09ecee08"
+  ],
+  "/Users/serge/Desktop/types/src/entities/kyc/identity.entity.ts": [
+    750,
+    1655827427639.5273,
+    "636f910f9e87c33eb145d1ae184896a1f16b926fcc77e28d6875f973c02eef56"
+  ],
+  "/Users/serge/Desktop/types/src/entities/kyc/index.ts": [
+    64,
+    1655751626768.8445,
+    "2441ab11618d962a50c350203b88edb2821d5012e8ea2b7aebede8494cf13e91"
+  ],
+  "/Users/serge/Desktop/types/src/entities/gateway/account.entity.ts": [
+    1284,
+    1655827427637.7988,
+    "0658059de794bc1de31746ebf67aecdc59b6ce02a88d1e597eb65a9aaf6cf72f"
+  ],
+  "/Users/serge/Desktop/types/src/entities/gateway/connection.entity.ts": [
+    889,
+    1655827427638.2803,
+    "55a846ce86dff9b7ca55c6f459275276a21b43d2c1b0473af4c015c6f1c22af4"
+  ],
+  "/Users/serge/Desktop/types/src/entities/gateway/document.entity.ts": [
+    835,
+    1655827427638.5562,
+    "4287028ffe7ac37c928a4c5a86042baea14b3cb434507de425e3ddc7145e7e55"
+  ],
+  "/Users/serge/Desktop/types/src/entities/gateway/index.ts": [
+    255,
+    1655827427638.8843,
+    "402107de5dff689b006a8044f075e0a6658dce0ca3e8986388b81cec8bcb8705"
+  ],
+  "/Users/serge/Desktop/types/src/entities/gateway/merchant.entity.ts": [
+    1440,
+    1655827427639.162,
+    "800c9ef9693129cdd2284220448559ab5251b68e2c55cbcde85674af37889b4d"
+  ],
+  "/Users/serge/Desktop/types/src/entities/payment/index.ts": [
+    73,
+    1655751626769.2502,
+    "fd20a280a24ca11368d752c6a84161f2aa03c7faa322c613c6894a48c00db1f0"
+  ],
+  "/Users/serge/Desktop/types/src/entities/payment/transaction.entity.ts": [
+    1946,
+    1655751626769.386,
+    "ce66c7caa54a14638328d12f59df3e1772b375071a7f7f7f9c102d790a7584f5"
+  ]
+}
