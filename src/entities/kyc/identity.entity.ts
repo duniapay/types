@@ -15,8 +15,8 @@ class Identity {
   @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
-  @Column({ name: "crypto_address", type: "varchar", length: 255 })
-  cryptoAddress: string;
+  @Column({ name: "reference_id", type: "varchar", length: 255 })
+  referenceId: string;
 
   @Column({ name: "passbase_id", type: "varchar", length: 255 })
   passbaseId: string;

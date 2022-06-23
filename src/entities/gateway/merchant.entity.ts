@@ -2,18 +2,21 @@ import {
   Column,
   CreateDateColumn,
   Entity,
-  PrimaryColumn,
+  OneToMany,
+  PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from "typeorm";
 import { UserType } from "../../enums";
+import MerchantAccount from "./account.entity";
+import MerchantDocument from "./document.entity";
 
 /**
- * @class User
+ * @class Merchant
  * This class represents Payments Gateway users (Module | Merchant).
  */
-@Entity({ name: "user" })
-class User {
-  @PrimaryColumn()
+@Entity({ name: "merchant" })
+class Merchant {
+  @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
   @Column({ name: "full_name", type: "varchar", length: 255 })
@@ -34,11 +37,21 @@ class User {
   @Column({ name: "prod_key", type: "varchar", length: 255 })
   prodKey: string;
 
-  @CreateDateColumn({ name: "created_at", type: "datetime" })
-  createdAt: string;
+  @OneToMany(() => MerchantAccount, (account) => account.merchant, {
+    nullable: true,
+  })
+  accounts?: Array<MerchantAccount>;
+
+  @OneToMany(() => MerchantDocument, (document) => document.merchant, {
+    nullable: true,
+  })
+  documents?: Array<MerchantDocument>;
 
   @UpdateDateColumn({ name: "updated_at", type: "datetime" })
-  updatedAt: string;
+  updatedAt: Date;
+
+  @CreateDateColumn({ name: "created_at", type: "datetime" })
+  createdAt: Date;
 }
 
-export default User;
+export default Merchant;

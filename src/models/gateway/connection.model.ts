@@ -6,10 +6,12 @@ import { ActionType } from "../../enums";
  */
 interface ConnectionModel {
   id: number;
-  keyUsed: string;
+  merchantId: string;
   isProd: boolean;
   actionType: ActionType;
   actionReference: string;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export default ConnectionModel;

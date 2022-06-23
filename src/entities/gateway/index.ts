@@ -1,4 +1,6 @@
+import MerchantAccount from "./account.entity";
 import Connection from "./connection.entity";
-import User from "./user.entity";
+import Merchant from "./merchant.entity";
+import MerchantDocument from "./document.entity";
 
-export { Connection, User };
+export { Connection, MerchantAccount, MerchantDocument, Merchant };

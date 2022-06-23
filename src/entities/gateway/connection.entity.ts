@@ -16,8 +16,8 @@ class Connection {
   @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
-  @Column({ name: "key_used", type: "varchar", length: 255 })
-  keyUsed: string;
+  @Column({ name: "merchant_id", type: "int" })
+  merchantId: number;
 
   @Column({ name: "is_prod", type: "boolean" })
   isProd: boolean;
@@ -29,10 +29,10 @@ class Connection {
   actionReference: string;
 
   @CreateDateColumn({ name: "created_at", type: "datetime" })
-  createdAt: string;
+  createdAt: Date;
 
   @UpdateDateColumn({ name: "updated_at", type: "datetime" })
-  updatedAt: string;
+  updatedAt: Date;
 }
 
 export default Connection;

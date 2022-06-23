@@ -14,6 +14,8 @@ interface QuoteModel {
   cryptoAmount: number;
   fees: number;
   quoteFor: TransactionType;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export default QuoteModel;

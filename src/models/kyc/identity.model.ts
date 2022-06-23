@@ -4,9 +4,11 @@
  */
 interface IdentityModel {
   id: number;
-  cryptoAddress: string;
+  referenceId: string;
   passbaseId: string;
   country?: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export default IdentityModel;
